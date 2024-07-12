@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your custom CSS -->
+    <title>Travel - Explore and Experience</title>
+    <style>
+        /* Styles for the Travel Page */
+        .travel {
+            background-image: url('assets/img/travel.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0 20px;
+        }
+
+        .travel__content {
+            background-color: rgba(59, 57, 57, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Travel Page Content -->
+    <section class="travel">
+        <div class="travel__content">
+            <h1>Welcome to Travel</h1>
+            <p>Travel is about exploring new cultures, tasting diverse cuisines, and experiencing breathtaking landscapes. It broadens our horizons and deepens our appreciation for the world's diversity.</p>
+            <p>Every journey offers opportunities for adventure, learning, and personal growth. So pack your bags, embrace the unknown, and discover the beauty and wonders that await you.</p>
+        </div>
+    </section>
+
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Travel</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Explore</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== MAIN ==========-->
+    <main class="main">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <!-- Your existing sections with Taj Mahal, Bali, India Gate, etc. -->
+            </div>
+        </div>
+
+        <!--========== CONTROLS ==========-->
+        <div class="controls gallery-thumbs">
+            <div class="controls__container swiper-wrapper">
+                <!-- Your existing control images -->
+            </div>
+        </div>
+    </main>
+
+    <!--========== MODAL ==========-->
+    <!-- Your existing modals for Taj Mahal, Bali, India Gate, etc. -->
+
+    <!-- Scripts -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script> <!-- Link to your custom JS -->
+</body>
+</html>
