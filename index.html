@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your custom CSS -->
+    <title>Responsive Landing Page Islands</title>
+    
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Travel</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
+                    
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== MAIN ==========-->
+    <main class="main">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <!--========== ISLANDS 1 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/taj.jpg" alt="" class="islands__bg">
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
+                            <h2 class="islands__subtitle">Tourist</h2>
+                            <h1 class="islands__title">TAJ MAHAL</h1>
+                            <p class="islands__description">
+                                The Taj Mahal is an ivory-white marble mausoleum in Agra, India, renowned for its stunning beauty and intricate architecture, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+                            </p>
+                            <a href="#" class="islands__button explore-btn" data-modal="tajModal">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                        </div>
+                    </div>
+                </section>
+    
+                <!--========== ISLANDS 2 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/hills.jpg" alt="" class="islands__bg">
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
+                            <h2 class="islands__subtitle">Tourist</h2>
+                            <h1 class="islands__title">Ooty</h1>
+                            <p class="islands__description">Ooty, also known as Udhagamandalam, is a town in the Western Ghats mountains in southern India. It's known for its coffee and tea plantations, and dense forests.</p>
+                            <a href="#" class="islands__button explore-btn" data-modal="ootyModal">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--========== ISLANDS 3 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="assets/img/gate.jpg" alt="" class="islands__bg">
+                    <div class="islands__container bd-container">
+                        <div class="islands__data">
+                            <h2 class="islands__subtitle">Tourist</h2>
+                            <h1 class="islands__title">INDIA GATE</h1>
+                            <p class="islands__description">The India Gate is a war memorial located in New Delhi, India, commemorating the soldiers who died in World War I and the Third Anglo-Afghan War.</p>
+                            <a href="#" class="islands__button explore-btn" data-modal="gateModal">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--========== CONTROLS ==========-->
+        <div class="controls gallery-thumbs">
+            <div class="controls__container swiper-wrapper">
+                <img src="assets/img/taj.jpg" alt="" class="controls__img swiper-slide">
+                <img src="assets/img/hills.jpg" alt="" class="controls__img swiper-slide">
+                <img src="assets/img/gate.jpg" alt="" class="controls__img swiper-slide">
+            </div>
+        </div>
+    </main>
+
+    <!--========== MODAL ==========-->
+    <!-- Taj Mahal Modal -->
+    <div id="tajModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Exploring the Taj Mahal</h2>
+            <p>Exploring the Taj Mahal offers a rich and immersive experience, filled with historical, architectural, and cultural delights. Here are some key things to explore when visiting the Taj Mahal:</p>
+            <h3>1. Main Mausoleum</h3>
+            <ul>
+                <li><strong>Central Dome</strong>: Marvel at the grand central dome, which is flanked by four smaller domes.</li>
+                <li><strong>Interior Chamber</strong>: Explore the intricately decorated interior chamber that houses the cenotaphs of Shah Jahan and Mumtaz Mahal.</li>
+                <li><strong>Marble Lattice Screens</strong>: Admire the beautifully carved marble screens that surround the cenotaphs.</li>
+            </ul>
+            <h3>2. The Charbagh Gardens</h3>
+            <ul>
+                <li><strong>Symmetrical Layout</strong>: Walk through the meticulously maintained gardens designed in the Charbagh style, symbolizing the Islamic concept of paradise.</li>
+                <li><strong>Reflecting Pools</strong>: Enjoy the serene reflecting pools that create a stunning mirror image of the Taj Mahal.</li>
+                <li><strong>Flora</strong>: Appreciate the variety of flowers and trees that add to the tranquility of the surroundings.</li>
+            </ul>
+            <h3>3. The Gateway</h3>
+            <ul>
+                <li><strong>Darwaza-i-Rauza</strong>: Enter through the grand gateway, which is an architectural marvel in itself with its intricate designs and calligraphy.</li>
+            </ul>
+            <h3>4. Minarets</h3>
+            <ul>
+                <li><strong>Four Minarets</strong>: Observe the four minarets at each corner of the platform, designed with a slight outward tilt to protect the mausoleum in case of an earthquake.</li>
+            </ul>
+            <h3>5. Inlay Work and Calligraphy</h3>
+            <ul>
+                <li><strong>Pietra Dura</strong>: Examine the exquisite pietra dura (stone inlay) work featuring semi-precious stones embedded in the marble.</li>
+                <li><strong>Calligraphy</strong>: Read the elegant calligraphy of verses from the Quran that adorn the walls and archways.</li>
+            </ul>
+            <h3>6. The Mosque and Jawab</h3>
+            <ul>
+                <li><strong>The Mosque</strong>: Visit the red sandstone mosque on the western side, used for prayers and religious gatherings.</li>
+                <li><strong>The Jawab</strong>: Explore the jawab (response) on the eastern side, built for architectural balance and often used as a guest house.</li>
+            </ul>
+            <h3>7. The Museum</h3>
+            <ul>
+                <li><strong>Taj Museum</strong>: Learn more about the history, construction, and significance of the Taj Mahal through the exhibits at the museum located within the complex.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ooty Modal -->
+    <div id="ootyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Exploring Ooty</h2>
+            <p>Ooty, also known as Udhagamandalam, is a popular hill station located in the Nilgiri Hills of Tamil Nadu, India. It offers a cool climate, picturesque landscapes, and numerous attractions for visitors. Here are some key things to explore when visiting Ooty:</p>
+            <h3>1. Botanical Gardens</h3>
+            <ul>
+                <li><strong>Flora</strong>: Discover a diverse collection of exotic and indigenous plants, trees, and flowers.</li>
+                <li><strong>Fossil Tree</strong>: See the 20-million-year-old fossil tree trunk.</li>
+            </ul>
+            <h3>2. Ooty Lake</h3>
+            <ul>
+                <li><strong>Boating</strong>: Enjoy a boat ride on the serene Ooty Lake.</li>
+                <li><strong>Scenic Views</strong>: Relax by the lake and take in the beautiful surroundings.</li>
+            </ul>
+            <h3>3. Doddabetta Peak</h3>
+            <ul>
+                <li><strong>Highest Peak</strong>: Trek to the highest peak in the Nilgiri Hills and enjoy panoramic views.</li>
+            </ul>
+            <h3>4. Tea Plantations</h3>
+            <ul>
+                <li><strong>Tea Gardens</strong>: Visit the lush tea gardens and learn about the tea-making process.</li>
+                <li><strong>Tea Museum</strong>: Explore the museum and taste different varieties of tea.</li>
+            </ul>
+            <h3>5. Nilgiri Mountain Railway</h3>
+            <ul>
+                <li><strong>Train Ride</strong>: Take a scenic train ride on the historic Nilgiri Mountain Railway, a UNESCO World Heritage site.</li>
+            </ul>
+            <h3>6. Rose Garden</h3>
+            <ul>
+                <li><strong>Variety of Roses</strong>: Walk through the garden and admire the extensive collection of roses.</li>
+            </ul>
+            <h3>7. St. Stephen's Church</h3>
+            <ul>
+                <li><strong>Colonial Architecture</strong>: Visit one of the oldest churches in the Nilgiris, known for its Gothic-style architecture.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- India Gate Modal -->
+    <div id="gateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Exploring India Gate</h2>
+            <p>The India Gate is a prominent landmark and war memorial located in New Delhi, India. It was built to commemorate the soldiers of the Indian Army who died during World War I and the Third Anglo-Afghan War. Here are some key things to explore when visiting India Gate:</p>
+            <h3>1. The Memorial</h3>
+            <ul>
+                <li><strong>Architectural Design</strong>: Observe the majestic structure designed by Sir Edwin Lutyens, inspired by the Arc de Triomphe in Paris.</li>
+                <li><strong>Inscribed Names</strong>: See the names of the soldiers inscribed on the walls of the monument.</li>
+            </ul>
+            <h3>2. Amar Jawan Jyoti</h3>
+            <ul>
+                <li><strong>Eternal Flame</strong>: Pay respects at the Amar Jawan Jyoti, the eternal flame burning in honor of the unknown soldiers.</li>
+            </ul>
+            <h3>3. The Surrounding Area</h3>
+            <ul>
+                <li><strong>Rajpath</strong>: Stroll along Rajpath, the ceremonial boulevard that runs from India Gate to Rashtrapati Bhavan.</li>
+                <li><strong>Lawns and Gardens</strong>: Relax in the well-maintained lawns and gardens surrounding India Gate, a popular spot for picnics and leisure activities.</li>
+            </ul>
+            <h3>4. Evening Illumination</h3>
+            <ul>
+                <li><strong>Lighting</strong>: Visit in the evening to see India Gate beautifully illuminated with lights, creating a picturesque view.</li>
+            </ul>
+            <h3>5. Republic Day Parade</h3>
+            <ul>
+                <li><strong>Ceremonial Events</strong>: If visiting around January 26th, witness the grand Republic Day Parade that takes place at India Gate, showcasing India's cultural diversity and military strength.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Get all the explore buttons
+        var exploreBtns = document.querySelectorAll('.explore-btn');
+
+        // Loop through each button and add click event listener
+        exploreBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var modalId = this.getAttribute('data-modal');
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                }
+            });
+        });
+
+        // Get all the close elements
+        var closeBtns = document.querySelectorAll('.close');
+
+        // Loop through each close element and add click event listener
+        closeBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var modal = this.closest('.modal');
+                modal.style.display = "none";
+            });
+        });
+
+        // Close the modal if the user clicks outside of it
+        window.addEventListener('click', function(event) {
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function(modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <!-- Link to Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Link to custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
